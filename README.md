@@ -4,7 +4,11 @@
 
 This repository hosts code for a part of my master's thesis at the University of Washington titled "Motion PLanning and Image Capturing for Robotic Inspection of a Curved Surface subject to Imaging Constraints". The objective is to automate the visual inspection of curved surfaces by using a robotic arm and an eye-in-hand camera, by developing a process to exploit geometric characteristics of the surface to be inspected. The central idea is to divide the surface into smaller regions, and then calculate the positions and orientations of the robot arm around the part so as to image it completely. This repository hosts code to automatically generate these waypoints for any part. The input to the pipeline is an STL file, and the output is a list of waypoints.
 
+![](images/robot.JPG)
+
 The idea is to segment the surface of the mesh into clusters, where each cluster is guaranteed to lie within the camera focal region. Mesh segmentation is based on an iterative K-means clustering algorithm - after each round of K-means, it checks if all clusters are smaller than the camera focal region. The K-means parameter "k" is increased/decreased accordingly by using a binary search approach.
+
+![](images/algorithm.JPG)
 
 # Setup and Test
 
