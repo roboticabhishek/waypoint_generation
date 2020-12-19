@@ -1,4 +1,4 @@
-# waypoint_gen
+# waypoint_generation
 
 # Introduction
 
