@@ -42,7 +42,7 @@ Alternatively, you can use the main.py script just to segment a mesh into planar
 
 
 # Troubleshooting
-- The most common error is when there aren't enough points to form clusters, usually when the geometries have extremely thin/flat surfaces
+- The most common error is when there aren't enough points to form clusters. Usually happens when the geometries have extremely thin/flat surfaces
 ```
 RuntimeError: QH6154 Qhull precision error: Initial simplex is flat (facet 1 is coplanar with the interior point)
 ```
