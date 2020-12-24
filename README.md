@@ -2,7 +2,7 @@
 
 # Introduction
 
-This repository hosts code for a part of my master's thesis at the University of Washington titled "Motion PLanning and Image Capturing for Robotic Inspection of a Curved Surface subject to Imaging Constraints". The objective is to automate the visual inspection of curved surfaces by using a robotic arm and an eye-in-hand camera, by developing a process to exploit geometric characteristics of the surface to be inspected. The central idea is to divide the surface into smaller regions, and then calculate the positions and orientations of the robot arm around the part so as to image it completely. This repository hosts code to automatically generate these waypoints for any part. The input to the pipeline is an STL file, and the output is a list of waypoints.
+This repository hosts code for a portion of my master's thesis at the University of Washington titled "Motion Planning and Image Capturing for Robotic Inspection of a Curved Surface subject to Imaging Constraints". The objective is to automate the visual inspection of curved surfaces by using a robotic arm and an eye-in-hand camera, by developing a process to exploit geometric characteristics of the surface to be inspected. The central idea is to divide the surface into smaller regions, and then calculate the positions and orientations of the robot arm around the part so as to image it completely. This repository hosts code to automatically generate these waypoints for any part. The input to the pipeline is an STL file, and the output is a list of waypoints.
 
 ![](images/robot.jpg)
 
