@@ -19,15 +19,20 @@ You need to have these libraries installed:
 
 ```
 pip install open3d
+pip install numpy
+pip install scikit-learn
 ```
 
-To test the setup, run the main.py script. You should replace the filepaths wherever necessary. The output should be a list of coordinates that are waypoints for inspection (WAYPOINT_XYZ), along with a list of normal directions (WAYPOINT_N)
+To test the setup, run the main.py script. You should replace the filepaths wherever necessary. The output should be a list of coordinates that are waypoints for inspection (variable WAYPOINT_XYZ), along with a list of normal directions (variable WAYPOINT_N)
+
+Alternatively, you can use the main.py script just to segment a mesh into planar regions. The clusters are stored as a list of meshes (variable mesh_list) and as a list of pointclouds (variable cluster_collection_color)
 
 # Organization
 
 - main.py is the script for the main routine
 - /functions contains helper functions with explanantions
 - /mesh contains the mesh files
+
 
 # Notes/Caveats
 - Visualizations of each stage of the pipeline are commented out. Uncomment "o3d.visualization.draw_geometries..." to observe the stages
